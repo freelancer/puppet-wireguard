@@ -23,6 +23,7 @@ define wireguard::interface (
   Optional[Array[Struct[
     {
       'PublicKey'           => String,
+      'Comment'             => Optional[String],
       'AllowedIPs'          => Optional[String],
       'Endpoint'            => Optional[String],
       'PersistentKeepalive' => Optional[Integer],
